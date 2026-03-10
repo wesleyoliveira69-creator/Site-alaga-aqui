@@ -1,58 +1,81 @@
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #f4f6f8;
+    margin:0;
+    background:#f1f4f8;
 }
 
-/* Cabeçalho */
+/* HEADER */
 
-header {
-    background-color: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 30px;
+header{
+    background:linear-gradient(135deg,#0077b6,#0096c7);
+    color:white;
+    text-align:center;
+    padding:40px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+header h1{
+    margin:0;
+    font-size:42px;
 }
 
-header p {
-    margin-top: 10px;
+header p{
+    margin-top:10px;
+    font-size:18px;
 }
 
-/* Conteúdo */
+/* CONTAINER */
 
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 
-/* Lista de locais */
+/* CARDS */
 
-ul {
-    list-style: none;
-    padding: 0;
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-top:30px;
 }
 
-li {
-    background: #e9f5ff;
-    margin: 10px 0;
-    padding: 15px;
-    border-left: 6px solid #0077b6;
-    border-radius: 5px;
+/* LISTA */
+
+.lista{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
-/* Rodapé */
+.local{
+    padding:18px;
+    border-radius:8px;
+    font-weight:bold;
+    color:white;
+}
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background: #222;
-    color: white;
+/* NÍVEIS DE ALERTA */
+
+.baixo{
+    background:#2a9d8f;
+}
+
+.medio{
+    background:#f4a261;
+}
+
+.alto{
+    background:#e63946;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+    background:#1d1d1d;
+    color:white;
 }
